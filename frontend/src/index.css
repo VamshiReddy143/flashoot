@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+body{
+    background-color: black;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* ensures body expands with content */
+  background: linear-gradient(to bottom, #3A070D 0%, #000000 155%, #000000 100%);
+  color: white; /* for readability */
+  background-attachment: fixed; /* makes the gradient stick during scroll */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.custom-gradient {
+  background-image: linear-gradient(
+    to right,
+    #ec4899 20%,      /* pink fixed left */
+    #facc15,          /* yellow */
+    #f97316,          /* orange */
+    #ec4899           /* pink again */
+  );
+}
+
+@keyframes gradient-sweep {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-sweep {
+  animation: gradient-sweep 5s ease infinite;
+}
+
+
+@keyframes moving-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.moving-border {
+  border: 1px solid transparent;
+  background-image: linear-gradient(#1A1A1A, #1A1A1A),
+    linear-gradient(270deg, #3b82f6, #ec4899, #ef4444); /* blue, pink, red */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: moving-border 4s linear infinite;
+  background-size: 600% 600%;
+}
+
+
