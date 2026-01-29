@@ -12,20 +12,43 @@ const reviews = [
   { id: 8, name: "Hannah", image: "/images/user7.jpg", review: "The team was super professional and creative! Our reels turned out stylish, high-quality, and way beyond our expectations." },
 ];
 
-const extendedReviews = [...reviews, ...reviews.slice(0, 3)];
-
 const Reviews = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
-  const cardsPerView = 3;
-  const resetIndex = reviews.length;
+  const [cardsPerView, setCardsPerView] = useState(3);
+  const [isMobile, setIsMobile] = useState(false);
 
+  // Handle responsive cards per view
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 640) { // Mobile
+        setCardsPerView(1);
+        setIsMobile(true);
+      } else if (width < 1024) { // Tablet
+        setCardsPerView(2);
+        setIsMobile(false);
+      } else { // Desktop
+        setCardsPerView(3);
+        setIsMobile(false);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Create extended card data for seamless looping
+  const extendedReviews = [...reviews, ...reviews.slice(0, cardsPerView)];
+
+  // Auto-scroll
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => {
-        if (prevIndex >= resetIndex) {
+        if (prevIndex >= reviews.length) {
           setIsTransitioning(false);
-          setTimeout(() => setIsTransitioning(true), 0);
+          setTimeout(() => setIsTransitioning(true), 50);
           return 0;
         }
         return prevIndex + 1;
@@ -33,29 +56,29 @@ const Reviews = () => {
     }, 5000); // Slow scroll every 5 seconds
 
     return () => clearInterval(interval);
-  }, [resetIndex]);
+  }, [reviews.length]);
 
   const activeDotIndex = currentIndex % reviews.length;
 
   return (
-    <div className="min-h-screen mt-30 px-10 text-white">
-      <div className="text-center mb-10">
-        <h1 className="text-[36px] font-[700]">
+    <div className="min-h-screen mt-20 sm:mt-24 md:mt-28 lg:mt-30 px-4 sm:px-6 md:px-8 lg:px-10 text-white">
+      <div className="text-center mb-8 sm:mb-10">
+        <h1 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[36px] font-[700] leading-tight sm:leading-snug lg:leading-normal">
           What Our{" "}
           <span className="bg-gradient-to-r from-[#EF4444] from-[93%] to-[#3A0B0D] bg-clip-text text-transparent">
             Loving Customers Say
           </span>
         </h1>
-        <p className="text-[18px] text-gray-400">
+        <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] text-gray-400 mt-2">
           Join thousands of satisfied customers who trust Flashoot
         </p>
       </div>
 
       {/* Carousel Wrapper */}
-      <div className="overflow-hidden relative">
+      <div className="overflow-hidden relative px-2 sm:px-3">
         <div
           className={`flex ${
-            isTransitioning ? "transition-transform duration-1000 ease-in-out" : ""
+            isTransitioning ? "transition-transform duration-700 ease-in-out" : ""
           }`}
           style={{
             transform: `translateX(-${(currentIndex * 100) / cardsPerView}%)`,
@@ -64,28 +87,28 @@ const Reviews = () => {
           {extendedReviews.map((review, index) => (
             <div
               key={`${review.id}-${index}`}
-              className="w-[370px] flex-shrink-0 px-3"
+              className="flex-shrink-0 px-2 sm:px-3"
               style={{ width: `${100 / cardsPerView}%` }}
             >
-              <div className="relative min-h-[250px] bg-black/20 backdrop-blur-3xl rounded-2xl p-6 shadow-lg border border-[#D1D5DB]/10 flex mt-5 flex-col">
+              <div className="relative min-h-[200px] sm:min-h-[220px] md:min-h-[240px] lg:min-h-[250px] bg-black/20 backdrop-blur-3xl rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg border border-[#D1D5DB]/10 flex mt-3 sm:mt-5 flex-col">
                 {/* Top-left icon */}
-                <div className="absolute -top-4 left-6 border border-[#EF4343]/20 bg-[#EF4343]/20 w-10 h-10 rounded-xl flex items-center justify-center shadow-md z-10">
-                  <PiQuotes size={20} className="text-[#EF4343]" />
+                <div className="absolute -top-3 sm:-top-4 left-4 sm:left-6 border border-[#EF4343]/20 bg-[#EF4343]/20 w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl flex items-center justify-center shadow-md z-10">
+                  <PiQuotes size={16} sm:size={20} className="text-[#EF4343]" />
                 </div>
 
                 {/* Review content */}
-                <p className="text-[18px] text-gray-300 leading-[28px] font-[400] flex-grow mt-4">
+                <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] text-gray-300 leading-[22px] sm:leading-[24px] md:leading-[26px] lg:leading-[28px] font-[400] flex-grow mt-3 sm:mt-4">
                   {review.review}
                 </p>
 
                 {/* Name and image aligned at bottom */}
-                <div className="flex items-center gap-4 pt-6">
+                <div className="flex items-center gap-3 sm:gap-4 pt-4 sm:pt-6">
                   <img
                     src={review.image}
-                    className="w-10 h-10 rounded-full object-cover"
+                    className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover"
                     alt={review.name}
                   />
-                  <p className="font-[600] text-white leading-[28px] text-[18px]">
+                  <p className="font-[600] text-white leading-[24px] sm:leading-[28px] text-[16px] sm:text-[18px]">
                     {review.name}
                   </p>
                 </div>
@@ -96,13 +119,17 @@ const Reviews = () => {
       </div>
 
       {/* Pagination Dots */}
-      <div className="flex justify-center gap-2 mt-6">
+      <div className="flex justify-center gap-1.5 sm:gap-2 mt-4 sm:mt-6">
         {reviews.map((_, index) => (
-          <div
+          <button
             key={index}
-            className={`h-2 rounded-full transition-all duration-500 ${
-              index === activeDotIndex ? "w-8 bg-[#EF4343]" : "w-3 bg-gray-600"
+            onClick={() => setCurrentIndex(index)}
+            className={`rounded-full transition-all duration-500 ${
+              index === activeDotIndex 
+                ? "bg-[#EF4343] w-6 sm:w-8 h-1.5 sm:h-2" 
+                : "bg-gray-600 w-4 sm:w-3 h-1 sm:h-2"
             }`}
+            aria-label={`Go to review ${index + 1}`}
           />
         ))}
       </div>

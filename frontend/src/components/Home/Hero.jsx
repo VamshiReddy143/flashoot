@@ -40,17 +40,17 @@ const Hero = () => {
     <div className="flex font-sans flex-col items-center justify-center min-h-screen text-center pt-40 hero-section">
       <div className="leading-[90px]">
         <div className="leading-[30px]">
-          <p className="font-sans text-[#C83738] font-[600] text-[16px]">
+          <p className="font-sans text-[#C83738] font-[600] lg:text-[16px]">
             WORLD'S FIRST QUICK CONTENT SERVICE
           </p>
-          <h3 className="font-sans text-white font-[700] text-[30px]">
+          <h3 className="font-sans text-white font-[700] lg:text-[30px]">
             We Shoot • Edit • Deliver Reels in
           </h3>
         </div>
 
         <div className="relative flex flex-col items-center mt-4">
-          <h1 className="font-sans text-[#EE4343] text-[128px] font-[700]">
-            10 Minutes*
+          <h1 className="font-sans leading-[70px] text-[#EE4343] lg:text-[128px] lead text-[70px]  font-[700]">
+            10  Minutes*
           </h1>
 
           <div className="border-12 bg-[#1A1A1A] border-[#1A1A1A] rounded-[30px] hero-image shadow-xl relative">
@@ -62,7 +62,7 @@ const Hero = () => {
             </div>
 
             <img
-              className="h- w-[280px] object-cover object-top  rounded-[20px] shadow-2xl"
+              className="h- lg:w-[280px] w-[200px] object-cover object-top  rounded-[20px] shadow-2xl"
               src="/images/hero.png"
               alt="Hero image"
             />
@@ -95,22 +95,22 @@ const Hero = () => {
       <div className="mt-20">
         <div className="flex items-center gap-8">
           <div className="flex flex-col items-center leading-[30px]">
-            <h2 className="text-[#EF4343] font-[700] text-[30px]">50,000+</h2>
-            <p className="text-[16px] text-gray-500">Reels Delivered</p>
+            <h2 className="text-[#EF4343] font-[700] text-[30px]">500+</h2>
+            <p className="text-[16px] text-[10px] text-gray-500 leading-tight">Reels Delivered</p>
           </div>
 
           <div className="h-[42px] w-[1px] bg-white/20" />
 
           <div className="flex flex-col items-center leading-[30px]">
             <h2 className="text-[#EF4343] font-[700] text-[30px]">4.9/5</h2>
-            <p className="text-[16px] text-gray-500">Rating</p>
+            <p className="text-[16px] text-gray-500 leading-tight">Rating</p>
           </div>
 
           <div className="h-[42px] w-[1px] bg-white/20" />
 
           <div className="flex flex-col items-center leading-[30px]">
             <h2 className="text-[#EF4343] font-[700] text-[30px]">500+</h2>
-            <p className="text-[16px] text-gray-500">Reel-Makers</p>
+            <p className="text-[16px] text-gray-500 leading-tight">Reel-Makers</p>
           </div>
         </div>
       </div>
