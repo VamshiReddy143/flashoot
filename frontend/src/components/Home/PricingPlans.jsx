@@ -1,5 +1,6 @@
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
+import Meter from "../Meter";
 
 const PricingPlans = () => {
   return (
@@ -21,6 +22,8 @@ const PricingPlans = () => {
           </p>
         </div>
       </div>
+
+     
 
       <div className="mt-8 sm:mt-10 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6 md:gap-7">

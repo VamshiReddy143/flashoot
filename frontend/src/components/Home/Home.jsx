@@ -1,4 +1,5 @@
 import Footer from "../Footer/Footer"
+import Meter from "../Meter"
 import BestSellers from "./BestSellers"
 import Download from "./Download"
 import Features from "./Features"
@@ -18,8 +19,9 @@ const Home =()=>{
             <PricingPlans/>
             <Reviews/>
             <Questions/>
-            <Download/>
+            {/* <Download/> */}
             <Footer/>
+            <Meter/>
         </div>
     )
 }

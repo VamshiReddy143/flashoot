@@ -20,8 +20,16 @@ const Footer = () => {
 
         {/* Certifications */}
         <div className="flex justify-center gap-4 sm:gap-5 items-start order-first lg:order-none">
-          <img src="/svgs/protect.svg" alt="Protection certified" className="h-16 sm:h-18 md:h-20 w-auto" />
-          <img src="/svgs/iso.svg" alt="ISO certified" className="h-16 sm:h-18 md:h-20 w-auto" />
+          <img
+            src="/svgs/protect.svg"
+            alt="Protection certified"
+            className="h-16 sm:h-18 md:h-20 w-auto"
+          />
+          <img
+            src="/svgs/iso.svg"
+            alt="ISO certified"
+            className="h-16 sm:h-18 md:h-20 w-auto"
+          />
         </div>
 
         {/* Social Media */}
@@ -30,10 +38,30 @@ const Footer = () => {
             Follow Us
           </p>
           <div className="flex items-center gap-2 sm:gap-3">
-            <FiFacebook size={20} sm:size={22} md:size={25} className="text-white/70 hover:text-white cursor-pointer transition-colors duration-300" />
-            <FaInstagram size={20} sm:size={22} md:size={25} className="text-white/70 hover:text-white cursor-pointer transition-colors duration-300" />
-            <LuLinkedin size={20} sm:size={22} md:size={25} className="text-white/70 hover:text-white cursor-pointer transition-colors duration-300" />
-            <FaXTwitter size={20} sm:size={22} md:size={25} className="text-white/70 hover:text-white cursor-pointer transition-colors duration-300" />
+            <FiFacebook
+              size={20}
+              sm:size={22}
+              md:size={25}
+              className="text-white/70 hover:text-white cursor-pointer transition-colors duration-300"
+            />
+            <FaInstagram
+              size={20}
+              sm:size={22}
+              md:size={25}
+              className="text-white/70 hover:text-white cursor-pointer transition-colors duration-300"
+            />
+            <LuLinkedin
+              size={20}
+              sm:size={22}
+              md:size={25}
+              className="text-white/70 hover:text-white cursor-pointer transition-colors duration-300"
+            />
+            <FaXTwitter
+              size={20}
+              sm:size={22}
+              md:size={25}
+              className="text-white/70 hover:text-white cursor-pointer transition-colors duration-300"
+            />
           </div>
         </div>
       </div>

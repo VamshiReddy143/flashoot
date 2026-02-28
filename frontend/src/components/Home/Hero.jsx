@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import CardCarousel from "../Curosel";
 
 const Hero = () => {
   useEffect(() => {
@@ -37,8 +38,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="flex font-sans flex-col items-center justify-center min-h-screen text-center pt-40 hero-section">
-      <div className="leading-[90px]">
+    <div className="flex font-sans flex-col items-center justify-center   min-h-screen text-center pt-20 ">
+      <div className="">
         <div className="leading-[30px]">
           <p className="font-sans text-[#C83738] font-[600] lg:text-[16px]">
             WORLD'S FIRST QUICK CONTENT SERVICE
@@ -53,22 +54,13 @@ const Hero = () => {
             10  Minutes*
           </h1>
 
-          <div className="border-12 bg-[#1A1A1A] border-[#1A1A1A] rounded-[30px] hero-image shadow-xl relative">
-            {/* iPhone camera-like structure */}
-            <div className="absolute top-[-5px] left-1/2 transform -translate-x-1/2">
-              <div className="moving-border w-[100px] h-[33px] rounded-b-2xl flex items-center justify-center gap-2">
-                <div className="w-[12px] h-[12px] bg-gray-700 rounded-full"></div>
-              </div>
-            </div>
-
-            <img
-              className="h- lg:w-[280px] w-[200px] object-cover object-top  rounded-[20px] shadow-2xl"
-              src="/images/hero.png"
-              alt="Hero image"
-            />
-          </div>
         </div>
       </div>
+
+
+       <div className="w-full">
+        <CardCarousel/>
+       </div>
 
       <div className="mt-16">
         <div className="flex gap-3 items-center">
