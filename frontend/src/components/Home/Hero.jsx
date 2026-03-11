@@ -62,17 +62,6 @@ const Hero = () => {
         <CardCarousel/>
        </div>
 
-      <div className="mt-16">
-        <div className="flex gap-3 items-center">
-          <div className="border border-gray-600 bg-[#2D242F] backdrop-blur-3xl rounded-xl py-2 px-4">
-            <p>Shot on  iPhone</p>
-          </div>
-          <div className="border border-gray-600 bg-[#2D242F] backdrop-blur-3xl rounded-xl py-2 px-4">
-            <p>Backed by ISB</p>
-          </div>
-        </div>
-      </div>
-
       <div className="mt-8">
         <div className="flex gap-3 items-center hover:cursor-pointer">
           <div className="bg-[#ED4343] backdrop-blur-3xl rounded-xl py-6 px-7 transition-transform duration-300 transform hover:scale-105">
