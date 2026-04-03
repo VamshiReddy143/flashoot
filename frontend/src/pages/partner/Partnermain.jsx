@@ -8,10 +8,10 @@ const Partnermain=()=>{
     return(
         <div>
          <Hero/>
-         <Join/>
          <Apply/>
-         <Working/>
-         <WorkiWith/>
+         {/* <Join/> */}
+         {/* <Working/>
+         <WorkiWith/> */}
         </div>
     )
 }

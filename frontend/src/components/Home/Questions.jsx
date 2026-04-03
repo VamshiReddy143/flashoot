@@ -53,57 +53,104 @@ const Questions = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-start justify-between gap-10 mt-20 sm:mt-24 md:mt-28 lg:mt-30 px-4 sm:px-6 md:px-8 lg:px-10 max-w-7xl mx-auto">
-      <div className="flex flex-col items-center gap-3 sm:gap-4">
-        {/* <div className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-[#6B191C] w-fit bg-gradient-to-r from-[#531315] to-[#3A0B0D] flex items-center gap-1.5 sm:gap-2">
-          <BsStars size={16} sm:size={17} className="text-[#EF4343]" />
-          <p className="text-[13px] sm:text-[14px] font-[500]">Frequently Asked Questions</p>
-        </div> */}
-        <div className="text-start px-2">
-          <h1 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] font-[700] leading-tight sm:leading-snug lg:leading-normal">
-            Got <span className="text-[#EF4343]"> Questions?</span>
+    <div className="min-h-screen max-w-7xl mx-auto mt-20 sm:mt-24 md:mt-28 lg:mt-30 px-4 sm:px-6 md:px-8 lg:px-10">
+
+      {/* Mobile & Tablet: stacked */}
+      <div className="flex flex-col gap-8 lg:hidden">
+        <div className="text-start">
+          <h1 className="text-[28px] sm:text-[36px] md:text-[40px] font-[700] leading-tight">
+            Got <span className="text-[#EF4343]">Questions?</span>
           </h1>
-          <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] font-[400] text-gray-300 mt-2">
-            Everything you need to know about <br /> becoming a Shot&Go member
+          <p className="text-[14px] sm:text-[15px] md:text-[16px] font-[400] text-gray-300 mt-2">
+            Everything you need to know about becoming a Shot&Go member
           </p>
+        </div>
+
+        <div className="w-full">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="border border-gray-900 cursor-pointer text-gray-100 hover:border-[#EF4343]/20 bg-black p-1.5 sm:p-2 rounded-lg sm:rounded-xl mb-3 sm:mb-4 transition-colors hover:text-[#EF4343] duration-500"
+            >
+              <button
+                className="w-full flex justify-between items-center py-3 sm:py-4 px-4 sm:px-6 text-left"
+                onClick={() => toggleAccordion(index)}
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-answer-mobile-${index}`}
+              >
+                <span className="text-[14px] sm:text-[15px] md:text-[17px] font-[600] text-left">
+                  {faq.question}
+                </span>
+                {openIndex === index ? (
+                  <FaChevronUp size={13} className="text-[#EF4343] flex-shrink-0 ml-2" />
+                ) : (
+                  <FaChevronDown size={13} className="text-gray-500 flex-shrink-0 ml-2" />
+                )}
+              </button>
+              <div
+                id={`faq-answer-mobile-${index}`}
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  openIndex === index ? "max-h-56" : "max-h-0"
+                }`}
+              >
+                <p className="px-4 sm:px-6 pb-3 sm:pb-4 text-[13px] sm:text-[14px] md:text-[15px] text-gray-300 leading-[22px] font-[400]">
+                  {faq.answer}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* Accordion */}
-      <div className="w-[50%]">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className="border border-gray-900 cursor-pointer text-gray-100 hover:border-[#EF4343]/20 bg-white/5 p-1.5 sm:p-2 rounded-lg sm:rounded-xl mb-3 sm:mb-4 transition-colors hover:text-[#EF4343] duration-500"
-          >
-            <button
-              className="w-full flex justify-between items-center py-3 sm:py-4 px-4 sm:px-6 text-left"
-              onClick={() => toggleAccordion(index)}
-              aria-expanded={openIndex === index}
-              aria-controls={`faq-answer-${index}`}
-            >
-              <span className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[600] text-left">
-                {faq.question}
-              </span>
-              {openIndex === index ? (
-                <FaChevronUp size={13} sm:size={14} className="text-[#EF4343] flex-shrink-0 ml-2" />
-              ) : (
-                <FaChevronDown size={13} sm:size={14} className="text-gray-500 transition-colors duration-500 hover:text-[#EF4343] flex-shrink-0 ml-2" />
-              )}
-            </button>
-            <div
-              id={`faq-answer-${index}`}
-              className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                openIndex === index ? "max-h-40 sm:max-h-48 md:max-h-56" : "max-h-0"
-              }`}
-            >
-              <p className="px-4 sm:px-6 pb-3 sm:pb-4 text-[14px] sm:text-[15px] md:text-[16px] text-gray-300 hover:text-gray-100 leading-[20px] sm:leading-[22px] md:leading-[24px] font-[400]">
-                {faq.answer}
-              </p>
-            </div>
+      {/* Laptop+: original side-by-side layout preserved exactly */}
+      <div className="hidden lg:flex items-start justify-between gap-10">
+        <div className="flex flex-col items-center gap-3">
+          <div className="text-start px-2">
+            <h1 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] font-[700] leading-tight sm:leading-snug lg:leading-normal">
+              Got <span className="text-[#EF4343]"> Questions?</span>
+            </h1>
+            <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] font-[400] text-gray-300 mt-2">
+              Everything you need to know about <br /> becoming a Shot&Go member
+            </p>
           </div>
-        ))}
+        </div>
+
+        <div className="w-[50%]">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="border border-gray-900 cursor-pointer text-gray-100 hover:border-[#EF4343]/20 bg-black p-1.5 sm:p-2 rounded-lg sm:rounded-xl mb-3 sm:mb-4 transition-colors hover:text-[#EF4343] duration-500"
+            >
+              <button
+                className="w-full flex justify-between items-center py-3 sm:py-4 px-4 sm:px-6 text-left"
+                onClick={() => toggleAccordion(index)}
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-answer-${index}`}
+              >
+                <span className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-[600] text-left">
+                  {faq.question}
+                </span>
+                {openIndex === index ? (
+                  <FaChevronUp size={13} className="text-[#EF4343] flex-shrink-0 ml-2" />
+                ) : (
+                  <FaChevronDown size={13} className="text-gray-500 transition-colors duration-500 hover:text-[#EF4343] flex-shrink-0 ml-2" />
+                )}
+              </button>
+              <div
+                id={`faq-answer-${index}`}
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  openIndex === index ? "max-h-40 sm:max-h-48 md:max-h-56" : "max-h-0"
+                }`}
+              >
+                <p className="px-4 sm:px-6 pb-3 sm:pb-4 text-[14px] sm:text-[15px] md:text-[16px] text-gray-300 hover:text-gray-100 leading-[20px] sm:leading-[22px] md:leading-[24px] font-[400]">
+                  {faq.answer}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
+
     </div>
   );
 };

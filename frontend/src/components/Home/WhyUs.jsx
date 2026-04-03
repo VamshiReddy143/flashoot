@@ -30,7 +30,7 @@ const WhyUs = () => {
 
       <div className="mt-7 flex gap-4  justify-center">
         <div className="flex flex-col gap-4">
-          <div className="bg-white/3 flex flex-col sm:flex-row items-center px-4 sm:px-5  gap-4 border border-white/20 rounded-xl hover:border-[#EF4343] hover:text-[#EF4343] transition-colors duration-500">
+          <div className="bg-black  flex flex-col sm:flex-row items-center px-4 sm:px-5  gap-4 border border-white/20 rounded-xl hover:border-[#EF4343] hover:text-[#EF4343] transition-colors duration-500">
             <img
               className="h-[140px] sm:h-[160px] md:h-[180px] lg:h-[200px] w-auto"
               src="/images/a3.png"
@@ -47,7 +47,7 @@ const WhyUs = () => {
           </div>
 
           <div className="flex items-center gap-4">
-              <div className="bg-white/3 w-[50%]  flex flex-col sm:flex-row items-center px-4 sm:px-5  gap-4 border border-white/20 rounded-xl hover:border-[#EF4343] hover:text-[#EF4343] transition-colors duration-500">
+              <div className="bg-black w-[50%]  flex flex-col sm:flex-row items-center px-4 sm:px-5  gap-4 border border-white/20 rounded-xl hover:border-[#EF4343] hover:text-[#EF4343] transition-colors duration-500">
             <img
               className="h-[140px] sm:h-[160px] md:h-[180px] lg:h-[200px] w-auto"
               src="/images/a2.png"
@@ -63,7 +63,7 @@ Easy Booking
               </p>
             </div>
           </div>
-            <div className="bg-white/3 w-[50%] flex flex-col sm:flex-row items-center px-4 sm:px-5  gap-4 border border-white/20 rounded-xl hover:border-[#EF4343] hover:text-[#EF4343] transition-colors duration-500">
+            <div className="bg-black w-[50%] flex flex-col sm:flex-row items-center px-4 sm:px-5  gap-4 border border-white/20 rounded-xl hover:border-[#EF4343] hover:text-[#EF4343] transition-colors duration-500">
             <img
               className="h-[140px] sm:h-[160px] md:h-[180px] lg:h-[200px] w-auto"
               src="/images/a1.png"
@@ -83,7 +83,7 @@ Easy Booking
 
 
 
-            <div className="bg-white/3  w-[40%] flex flex-col  items-center px-4 sm:px-5  gap-4 border border-white/20 rounded-xl hover:border-[#EF4343] hover:text-[#EF4343] transition-colors duration-500">
+            <div className="bg-black  w-[40%] flex flex-col  items-center px-4 sm:px-5  gap-4 border border-white/20 rounded-xl hover:border-[#EF4343] hover:text-[#EF4343] transition-colors duration-500">
             <img
               className="h-[140px] sm:h-[160px] md:h-[180px] lg:h-[200px] w-auto"
               src="/images/why4.png"

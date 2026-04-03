@@ -62,7 +62,7 @@ const BestSellers = () => {
               </div>
               <div className="flex items-center gap-3 sm:gap-4 text-[14px] sm:text-[15px] md:text-[16px] font-[400]">
                 <p className="text-[#EE4343]">✓</p>
-                <p className="text-left">Flashoot Branding Included</p>
+                <p className="text-left">Shot&Go Branding Included</p>
               </div>
             </div>
 
@@ -134,7 +134,7 @@ const BestSellers = () => {
               </div>
               <div className="flex items-center gap-3 sm:gap-4 text-[14px] sm:text-[15px] md:text-[16px] font-[400]">
                 <p className="text-[#EE4343]">✓</p>
-                <p className="text-left">Flashoot Branding Included</p>
+                <p className="text-left">Shot&Go Branding Included</p>
               </div>
             </div>
 

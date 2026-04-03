@@ -167,7 +167,7 @@ const PricingPlans = () => {
                     <div className="group flex items-start sm:items-center gap-2">
                       <div className="w-2 h-2 rounded-full bg-[#EF4343] transition-transform duration-300 group-hover:scale-125 flex-shrink-0 mt-1 sm:mt-0" />
                       <p className="text-[14px] sm:text-[15px] md:text-[16px] font-[400]">
-                        Flashoot branding included
+                        Shot&Go branding included
                       </p>
                     </div>
                     <div className="group flex items-start sm:items-center gap-2">
