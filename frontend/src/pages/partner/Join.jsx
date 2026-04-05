@@ -8,15 +8,15 @@ const Join = () => {
           Why People
         </h1>
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-5 text-5xl sm:text-6xl md:text-7xl lg:text-[90px] font-bold">
-          <p>Choose</p>
+          <p> Dream</p>
           <div className="flex items-center gap-2 sm:gap-3">
-            <p>Shot</p>
+          
             <img
               src="/images/a.png"
               alt=""
               className="h-10 sm:h-14 md:h-16 lg:h-20 bg-black p-2 sm:p-3 md:p-4 rounded-xl border-t border-r"
             />
-            <p>Go</p>
+            <p>Shoots</p>
           </div>
         </div>
         <p className="font-semibold text-sm sm:text-base md:text-lg lg:text-[20px] text-gray-400">
@@ -36,7 +36,7 @@ const Join = () => {
         </div>
         <div className="border-3 border-gray-400 rounded-xl p-5 flex flex-col items-end justify-end bg-gradient-to-br from-[#F1312F] to-[#000]">
           <p className="text-base font-semibold text-gray-100 mb-3 text-center">
-            Shot&Go is the destination for people looking to capture their most special moments — from weddings and birthdays to parties and celebrations.
+             DreamShoots is the destination for people looking to capture their most special moments — from weddings and birthdays to parties and celebrations.
           </p>
           <p className="text-base font-semibold text-gray-100 text-center">
             But we're not just about bookings. We connect you with skilled photographers and videographers who turn your events into unforgettable memories.
@@ -68,7 +68,7 @@ const Join = () => {
         {/* Middle row: center promo card — full width */}
         <div className="col-span-2 border-3 border-gray-400 rounded-xl p-6 flex flex-col items-center justify-center text-center bg-gradient-to-br from-[#F1312F] to-[#000] gap-4">
           <p className="text-lg font-semibold text-gray-100">
-            Shot&Go is the destination for people looking to capture their most special moments — from weddings and birthdays to parties and celebrations.
+             DreamShoots is the destination for people looking to capture their most special moments — from weddings and birthdays to parties and celebrations.
           </p>
           <p className="text-lg font-semibold text-gray-100">
             But we're not just about bookings. We connect you with skilled photographers and videographers who turn your events into unforgettable memories.
@@ -103,7 +103,7 @@ const Join = () => {
         <div className="border-3 text-center relative border-gray-400 rounded-xl p-5 flex flex-col items-end justify-end mt-20 bg-gradient-to-br from-[#F1312F] to-[#000]">
           <img src="/images/a.png" alt="" className="h-20 bg-black p-4 rounded-xl border absolute -top-10 left-[40%]" />
           <p className="text-[25px] font-semibold text-gray-100 mb-3">
-            Shot&Go is the destination for people looking to capture their most special moments — from weddings and birthdays to parties and celebrations.
+            DreamShoots is the destination for people looking to capture their most special moments — from weddings and birthdays to parties and celebrations.
           </p>
           <p className="text-[25px] font-semibold text-gray-100">
             But we're not just about bookings. We connect you with skilled photographers and videographers who turn your events into unforgettable memories.

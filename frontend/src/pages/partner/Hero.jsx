@@ -12,9 +12,9 @@ const Hero = () => {
         </h1>
 
         <img
-          src="/images/shotandgo-logo.png"
-          alt="Shot&Go"
-          className="mx-auto mt-4  sm:w-64 md:w-80 lg:w-auto max-w-full"
+          src="/images/logo.png"
+          alt="DreamShoots"
+          className="mx-auto mt-4  sm:w-64 md:w-150  max-w-full"
         />
       </div>
 
@@ -22,7 +22,7 @@ const Hero = () => {
       <p className="max-w-3xl pt-8 sm:pt-10 text-sm sm:text-base md:text-[17px] lg:text-[19px] text-center sm:text-left leading-relaxed px-2 sm:px-0">
         We are trained iPhone creators who shoot, edit, and deliver
         professional Instagram reels in just 10 minutes. Whether you're a
-        student, hustler, or creative explorer—Shot&Go helps you earn through
+        student, hustler, or creative explorer—DreamShoots helps you earn through
         content creation using nothing but your phone. We're live across India,
         UAE, USA—and growing fast. Join our expanding network of creators
         worldwide.

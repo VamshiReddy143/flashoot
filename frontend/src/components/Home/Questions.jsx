@@ -4,44 +4,44 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const faqs = [
   {
-    question: "What is a Shot&Go member?",
-    answer: "A Shot&Go member is a skilled content creator who uses the Shot&Go platform to offer professional reel-making services for events, businesses, or personal projects."
+    question: "What is a DreamShoots member?",
+    answer: "A DreamShoots member is a skilled content creator who uses the DreamShoots platform to offer professional reel-making services for events, businesses, or personal projects."
   },
   {
-    question: "How do I become a Shot&Go member?",
-    answer: "Sign up on the Shot&Go platform, complete your profile with your skills and portfolio, pass the verification process, and start accepting bookings."
+    question: "How do I become a DreamShoots member?",
+    answer: "Sign up on the DreamShoots platform, complete your profile with your skills and portfolio, pass the verification process, and start accepting bookings."
   },
   {
-    question: "What skills do I need to be a Shot&Go member?",
+    question: "What skills do I need to be a DreamShoots member?",
     answer: "You should have experience in video editing, storytelling, and using tools like Adobe Premiere, Final Cut Pro, or mobile editing apps. Creativity and reliability are key!"
   },
   {
-    question: "How much can I earn as a Shot&Go member?",
-    answer: "Earnings depend on the number of bookings and your pricing. Shot&Go allows you to set your rates, with top Shot&Go members earning competitive income for high-quality reels."
+    question: "How much can I earn as a DreamShoots member?",
+    answer: "Earnings depend on the number of bookings and your pricing. DreamShoots allows you to set your rates, with top DreamShoots members earning competitive income for high-quality reels."
   },
   {
     question: "Do I need my own equipment?",
-    answer: "Yes, Shot&Go members typically provide their own cameras, smartphones, or editing software to create professional-grade reels for clients."
+    answer: "Yes, DreamShoots members typically provide their own cameras, smartphones, or editing software to create professional-grade reels for clients."
   },
   {
-    question: "How does booking work on Shot&Go?",
+    question: "How does booking work on DreamShoots?",
     answer: "Clients book you through the platform by selecting your profile, choosing a time slot, and specifying their needs. You'll receive notifications and can manage bookings directly."
   },
   {
-    question: "Is there a fee to join Shot&Go?",
-    answer: "There's no upfront fee to join, but Shot&Go takes a small commission on each booking to cover platform maintenance and support."
+    question: "Is there a fee to join DreamShoots?",
+    answer: "There's no upfront fee to join, but DreamShoots takes a small commission on each booking to cover platform maintenance and support."
   },
   {
-    question: "Can I work part-time as a Shot&Go member?",
-    answer: "Absolutely! Shot&Go offers flexible scheduling, so you can take bookings that fit your availability, whether part-time or full-time."
+    question: "Can I work part-time as a DreamShoots member?",
+    answer: "Absolutely! DreamShoots offers flexible scheduling, so you can take bookings that fit your availability, whether part-time or full-time."
   },
   {
     question: "How do I get paid for my work?",
-    answer: "Payments are processed securely through the Shot&Go platform after completing a booking. You'll receive funds directly to your linked bank account or payment method."
+    answer: "Payments are processed securely through the DreamShoots platform after completing a booking. You'll receive funds directly to your linked bank account or payment method."
   },
   {
-    question: "What support does Shot&Go offer creators?",
-    answer: "Shot&Go provides resources like tutorials, community forums, and customer support to help you succeed, plus tools to manage bookings and showcase your work."
+    question: "What support does DreamShoots offer creators?",
+    answer: "DreamShoots provides resources like tutorials, community forums, and customer support to help you succeed, plus tools to manage bookings and showcase your work."
   },
 ];
 
@@ -62,7 +62,7 @@ const Questions = () => {
             Got <span className="text-[#EF4343]">Questions?</span>
           </h1>
           <p className="text-[14px] sm:text-[15px] md:text-[16px] font-[400] text-gray-300 mt-2">
-            Everything you need to know about becoming a Shot&Go member
+            Everything you need to know about becoming a DreamShoots member
           </p>
         </div>
 
@@ -110,7 +110,7 @@ const Questions = () => {
               Got <span className="text-[#EF4343]"> Questions?</span>
             </h1>
             <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] font-[400] text-gray-300 mt-2">
-              Everything you need to know about <br /> becoming a Shot&Go member
+              Everything you need to know about <br /> becoming a DreamShoots member
             </p>
           </div>
         </div>

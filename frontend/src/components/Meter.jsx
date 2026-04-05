@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Meter = ({ text = "We are Shot&Go", hue = 33, duration = 10, bgLight = 0.1, scale = 1 }) => {
+const Meter = ({ text = "We are DreamShoots", hue = 33, duration = 10, bgLight = 0.1, scale = 1 }) => {
   const safeScale = Math.min(scale, 1);
   return (
     <>

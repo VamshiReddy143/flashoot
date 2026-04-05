@@ -53,9 +53,9 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" onClick={closeMenu}>
             <img
-              src="/images/shotandgo-logo.png"
+              src="/images/logo.png"
               alt="logo"
-              className="h-[30px] sm:h-[35px] lg:h-[40px] w-auto transition-transform duration-300 hover:scale-105"
+              className="h-[40px] sm:h-[35px] lg:h-[70px] w-auto transition-transform duration-300 hover:scale-105"
             />
           </Link>
 
@@ -204,7 +204,7 @@ const Navbar = () => {
 
                 {/* Footer */}
                 <div className="mt-auto pt-8 text-center">
-                  <p className="text-white/20 text-xs">© 2025 Shot&Go. All rights reserved.</p>
+                  <p className="text-white/20 text-xs">© 2025 DreamShoots. All rights reserved.</p>
                 </div>
               </div>
             </motion.div>

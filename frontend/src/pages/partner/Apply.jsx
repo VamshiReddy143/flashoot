@@ -30,7 +30,7 @@ const cards = [
     from: "#8B4513",
   },
   {
-    title: "Shot&Go Partner Kit",
+    title: "DreamShoots Partner Kit",
     desc: "Join a network of creators and grow together.",
     img: "/images/community.png",
     border: "#4A2C5F",
@@ -56,7 +56,7 @@ const Apply = () => {
           <p className="text-[#868686] text-2xl sm:text-3xl font-semibold">Sponsorship</p>
           <p className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">Opportunities</p>
           <p className="text-2xl sm:text-3xl font-semibold mt-4">
-            Why Join - Shot <span className="text-red-500">&</span> Go
+            Why Join - DreamShoots
           </p>
           <p className="text-gray-400 text-base sm:text-lg mt-1">Turn your iPhone into a creative business</p>
         </div>
@@ -93,7 +93,7 @@ const Apply = () => {
           <p className="text-[#868686] text-[35px] font-semibold">Sponsorship</p>
           <p className="text-[70px] font-bold leading-tight">Opportunities</p>
           <p className="text-[40px] font-semibold mt-5">
-            Why Join - Shot <span className="text-red-500">&</span> Go
+            Why Join - DreamShoots
           </p>
           <p className="text-gray-400 text-[20px]">Turn your iPhone into a creative business</p>
         </div>

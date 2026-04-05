@@ -27,10 +27,10 @@ const contactInfo = [
 ];
 
 const socials = [
-  { icon: <FaInstagram size={20} />, label: "Instagram", handle: "@shotandgo" },
-  { icon: <FaYoutube size={20} />, label: "YouTube", handle: "Shot&Go Official" },
-  { icon: <FaTwitter size={20} />, label: "Twitter / X", handle: "@shotandgo" },
-  { icon: <FaLinkedin size={20} />, label: "LinkedIn", handle: "Shot&Go" },
+  { icon: <FaInstagram size={20} />, label: "Instagram", handle: "@DreamShoots" },
+  { icon: <FaYoutube size={20} />, label: "YouTube", handle: "DreamShoots Official" },
+  { icon: <FaTwitter size={20} />, label: "Twitter / X", handle: "@DreamShoots" },
+  { icon: <FaLinkedin size={20} />, label: "LinkedIn", handle: "DreamShoots" },
 ];
 
 const Contact = () => {

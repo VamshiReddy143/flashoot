@@ -95,7 +95,7 @@ const Footer = () => {
             <img
               src="/images/a.png"
               alt="Shot&Go Logo"
-              className={`h-24 md:h-28 lg:h-auto w-auto transition-all duration-300 ${isHovered ? 'animate-jelly' : ''} hover:cursor-pointer`}
+              className={`h-24 md:h-28 lg:h-[500px] w-auto transition-all duration-300 ${isHovered ? 'animate-jelly' : ''} hover:cursor-pointer`}
             />
           </div>
         </div>

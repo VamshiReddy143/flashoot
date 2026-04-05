@@ -9,7 +9,7 @@ const Reviews = () => {
           </span>
         </h1>
         <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] text-gray-400 mt-2">
-          Join thousands of satisfied <br /> customers who trust Shot&Go
+          Join thousands of satisfied <br /> customers who trust DreamShoots
         </p>
       </div>
 
@@ -103,7 +103,7 @@ const Reviews = () => {
               <div className="p-3 bg-white rounded-xl text-gray-800">
                 <p className="flex items-center gap-2 text-gray-500 uppercase text-[12px]">4.9 <img src="/images/ss.svg" alt="" className="h-3" /> rating</p>
                 <p className="pt-5 font-semibold ">
-                  "shot&go truly changed the game! Unlike traditional videographers, they delivered stunning reels instantly after my event."
+                  "DreamShoots truly changed the game! Unlike traditional videographers, they delivered stunning reels instantly after my event."
                 </p>
               </div>
 
@@ -120,7 +120,7 @@ const Reviews = () => {
               <div className="p-3 bg-white rounded-xl text-gray-800">
                  <p className="flex items-center gap-2 text-gray-500 uppercase text-[12px]">4.9 <img src="/images/ss.svg" alt="" className="h-3" /> rating</p>
                 <p className="pt-5 font-semibold">
-                  "Seamless booking, professional creators, and stunning reels! shot&go made capturing memories effortless and fun."
+                  "Seamless booking, professional creators, and stunning reels! DreamShoots made capturing memories effortless and fun."
                 </p>
               </div>
 
@@ -140,7 +140,7 @@ const Reviews = () => {
               <div className="p-3 bg-white rounded-xl text-gray-800">
                   <p className="flex items-center gap-2 text-gray-500 uppercase text-[12px]">4.9 <img src="/images/ss.svg" alt="" className="h-3" /> rating</p>
                 <p className="pt-5 font-semibold">
-                  "shot&go is a game-changer! Quick booking, talented reel makers, and amazing event coverage. Loved the experience!"
+                  "DreamShoots is a game-changer! Quick booking, talented reel makers, and amazing event coverage. Loved the experience!"
                 </p>
               </div>
 
@@ -157,7 +157,7 @@ const Reviews = () => {
               <div className="p-3 bg-white rounded-xl text-gray-800">
                   <p className="flex items-center gap-2 text-gray-500 uppercase text-[12px]">4.9 <img src="/images/ss.svg" alt="" className="h-3" /> rating</p>
                 <p className="pt-5 font-semibold">
-                  "shot&go made booking a reel maker super easy! Great service, skilled creators, and stunning reels. Highly recommend!"
+                  "DreamShoots made booking a reel maker super easy! Great service, skilled creators, and stunning reels. Highly recommend!"
                 </p>
               </div>
 

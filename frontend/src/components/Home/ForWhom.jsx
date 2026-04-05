@@ -4,10 +4,11 @@ const ForWhom = () => {
 
       {/* Mobile only: stacked */}
       <div className="w-full flex flex-col md:hidden gap-6">
-        <div>
+        <div className="text-center">
           <h1 className="text-3xl sm:text-4xl font-semibold leading-tight">
-            Capture every moment <br /> with Shot<span className="text-red-500">&</span>Go
+            Capture every moment <br /> with 
           </h1>
+          <img src="/images/logo.png" alt="" />
           <p className="mt-4 font-semibold text-gray-300 text-sm sm:text-base max-w-xl">
             Easily book photographers and videographers for weddings,
             birthdays, parties, and special events. Your memories deserve
@@ -23,12 +24,16 @@ const ForWhom = () => {
       </div>
 
       {/* Tablet (md–lg): side by side — text left, 2-col image grid right */}
-      <div className="hidden md:flex lg:hidden items-start gap-6 w-full">
+      <div className="hidden md:flex lg:hidden items-start text-center gap-6 w-full">
         {/* Left: text */}
         <div className="w-[45%] sticky top-10">
           <h1 className="text-3xl md:text-4xl font-semibold leading-tight">
-            Capture every moment <br /> with Shot<span className="text-red-500">&</span>Go
+            Capture every moment 
           </h1>
+          <div className="flex flex-col items-center gap-3 sm:gap-4 mt-2">
+            <h1  className="text-3xl md:text-4xl font-semibold leading-tight">with</h1>
+             <img src="/images/logo.png" alt="" className="h-20"/>
+          </div>
           <p className="mt-4 font-semibold text-gray-300 text-sm md:text-base">
             Easily book photographers and videographers for weddings,
             birthdays, parties, and special events. Your memories deserve
@@ -49,8 +54,13 @@ const ForWhom = () => {
       <div className="hidden lg:flex items-start gap-5">
         <div>
           <h1 className="text-[60px] font-semibold leading-tight">
-            Capture every moment <br /> with Shot<span className="text-red-500">&</span>Go
+            Capture every moment 
           </h1>
+
+            <div className="flex  items-start gap-3 sm:gap-4 mt-2">
+            <h1  className="text-[60px] font-semibold leading-tight">with</h1>
+             <img src="/images/logo.png" alt="" className="h-30"/>
+          </div>
           <p className="mt-5 font-semibold text-gray-300 text-[17px] w-[700px]">
             Easily book photographers and videographers for weddings,
             birthdays, parties, and special events. Your memories deserve

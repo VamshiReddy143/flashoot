@@ -98,7 +98,7 @@ const Hero = () => {
       <div className="mx-auto my-2" style={{ width: 'min(80vw, 900px)' }}>
         <img
           className="w-full object-cover"
-          src="/images/shotandgo-logo.png"
+          src="/images/logo.png"
           alt="Logo"
           style={{ filter: 'drop-shadow(2px 0 0 rgb(0 184 219))' }}
         />
