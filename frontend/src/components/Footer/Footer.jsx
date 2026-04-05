@@ -14,7 +14,7 @@ const Footer = () => {
 
         {/* Logo + tagline */}
         <div className="flex flex-col items-center gap-3">
-          <img src="/images/a.png" alt="Shot&Go Logo" className="h-16 w-auto" />
+          <img src="/images/a.png" alt="dreamshoots Logo" className="h-16 w-auto" />
           <p className="text-gray-500 text-xs text-center">
             Turn moments into memories — India · UAE · USA
           </p>
@@ -94,7 +94,7 @@ const Footer = () => {
           >
             <img
               src="/images/a.png"
-              alt="Shot&Go Logo"
+              alt="dreamshoots Logo"
               className={`h-24 md:h-28 lg:h-[500px] w-auto transition-all duration-300 ${isHovered ? 'animate-jelly' : ''} hover:cursor-pointer`}
             />
           </div>

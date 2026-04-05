@@ -152,7 +152,7 @@ const Navbar = () => {
 
                 {/* Logo */}
                 <div className="mb-8">
-                  <img src="/images/shotandgo-logo.png" alt="logo" className="h-[36px] w-auto" />
+                  <img src="/images/logo.png" alt="logo" className="h-[36px] w-auto" />
                 </div>
 
                 {/* Nav links */}
