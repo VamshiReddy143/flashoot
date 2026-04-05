@@ -5,7 +5,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 const contactInfo = [
   {
     label: "Email Us",
-    value: "hello@shotandgo.com",
+    value: "hello@dreamshoots.com",
     sub: "We reply within 24 hours",
     border: "#C44536",
     from: "#C44536",
